@@ -26,14 +26,21 @@ public class Blacklist implements CommandLineRunner {
                 this.name += args[i] + " ";
             }
         }
-        /*System.out.println(name);
+        System.out.println(name);
         System.out.println(blacklistFileName);
-        System.out.println(noiseFileName);*/
+        System.out.println(noiseFileName);
     }
 
     @Autowired
     private ReadFile read;
+    String[] blacklistedNames = read.read(blacklistFileName);
+    String[] noisenames = read.read(noiseFileName);
 
     @Autowired
     private CompareStrings compareStrings;
+    float finalpercentage;
+
+    public void main(String[] args) {
+        System.out.println(blacklistedNames);
+    }
 }

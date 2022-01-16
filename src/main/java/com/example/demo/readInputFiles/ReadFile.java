@@ -8,11 +8,10 @@ import java.util.Scanner;
 
 @Component("ReadFiles")
 public class ReadFile {
-    String fileName;
 
-    private String[] read(){
+    public String[] read(String filename){
         String name = "";
-        File file = new File(this.fileName);
+        File file = new File(filename);
         try {
             Scanner sc = new Scanner(file);
             while (sc.hasNext()){
