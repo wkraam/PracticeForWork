@@ -42,5 +42,6 @@ public class Blacklist implements CommandLineRunner {
 
     public void main(String[] args) {
         System.out.println(blacklistedNames);
+
     }
 }
