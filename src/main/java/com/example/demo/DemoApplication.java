@@ -11,7 +11,7 @@ import java.util.Arrays;
 
 @SpringBootApplication
 public class DemoApplication {
-	private static String name="Putin";
+	private static String name="Osama";
 	private static String blacklistFileName = "blacklist.txt";
 	private static String noiseFileName = "noise.txt";
 
