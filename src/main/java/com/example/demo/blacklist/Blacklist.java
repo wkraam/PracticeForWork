@@ -1,21 +1,20 @@
 package com.example.demo.blacklist;
 
 import com.example.demo.readInputFiles.ReadFile;
-import com.example.demo.stringManipulator.CompareStrings;
+import com.example.demo.stringManipulator.Comparator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
-import org.springframework.stereotype.Component;
 
-@Component
-public class Blacklist implements CommandLineRunner {
 
-    private String name="";
-    private String blacklistFileName;
-    private String noiseFileName;
+public class Blacklist {
+
+    /*private String name="Osama Bin Laden";
+    private String blacklistFileName = "blacklist.txt";
+    private String noiseFileName = "noise.txt";
 
     @Override
     public void run(String... args){
-        if (args.length == 3) {
+        /*if (args.length == 3) {
             this.name = args[0];
             this.blacklistFileName = args[1];
             this.noiseFileName = args[2];
@@ -28,20 +27,22 @@ public class Blacklist implements CommandLineRunner {
         }
         System.out.println(name);
         System.out.println(blacklistFileName);
-        System.out.println(noiseFileName);
+        System.out.println(noiseFileName);*/
     }
 
-    @Autowired
+
+
+    /*@Autowired
     private ReadFile read;
-    String[] blacklistedNames = read.read(blacklistFileName);
-    String[] noisenames = read.read(noiseFileName);
 
     @Autowired
-    private CompareStrings compareStrings;
-    float finalpercentage;
+    private Comparator compareStrings;
 
     public void main(String[] args) {
-        System.out.println(blacklistedNames);
+        String[] blaclistedNames = read.read(blacklistFileName);
+        String[] noiseNames = read.read(noiseFileName);
+        String[] percentage = compareStrings.getResults(blaclistedNames, name);
+        System.out.println(percentage);
 
     }
-}
+}*/
